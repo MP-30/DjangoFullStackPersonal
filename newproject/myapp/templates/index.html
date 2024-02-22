@@ -2,7 +2,7 @@
 {% block title %}Home{% endblock title %}
 {% block content %}
 
-<div class="card bg-light p-3">
+<div class="card bg-light p-5">
 
   <h3 class="text-dark">Signup</h3>
   <form action="/auth/signup/" method="post">{% csrf_token %}
@@ -23,7 +23,7 @@
       <input type="password" class="form-control" id="pass2" name="pass2" required>
      </div>
      <br>
-     <button type="submit" class="btn">SignIn</button>
+     <button type="submit" class="btn btn-dark">SignIn</button>
   
      <br>
      Already User? <a href="/auth/login/">Login</a>
